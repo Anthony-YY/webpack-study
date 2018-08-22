@@ -11,10 +11,14 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.join(__dirname, 'dist')
     },
+    devServer: {
+        contentBase: './dist',
+    },
+    devtool: 'inline-source-map',
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            title: 'Output Management'
+            title: 'Development'
         })
     ]
 }

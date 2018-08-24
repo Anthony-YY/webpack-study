@@ -16,7 +16,7 @@ module.exports = {
     devServer: {
         contentBase: './dist',
         hot: true,
-        hotOnly: false
+        host: 'localhost'
     },
     devtool: 'inline-source-map',
     plugins: [

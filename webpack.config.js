@@ -25,5 +25,13 @@ module.exports = {
             title: 'Development'
         }),
         new webpack.HotModuleReplacementPlugin()
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                loaders: ['style-loader', 'css-loader']
+            }
+        ]
+    }
 }
